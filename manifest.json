@@ -1,0 +1,14 @@
+{
+    "name": "Chrome extension for Trello",
+    "author": "tamorieeeen",
+    "description": "Chrome extension for Trello",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "content_scripts": [{
+        "matches": ["https://trello.com/b/**"],
+        "js": [
+            "js/jquery-3.7.1.min.js",
+            "js/content.js"
+        ]
+    }]
+}
