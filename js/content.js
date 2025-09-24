@@ -8,9 +8,9 @@ $(function(){
   すべてのListが一画面で見えるようにする
  */
 function slimLists() {
-    // 画面サイズから左側のバーを引く
-    const winWidth = jQuery(window).width() - 16;
-    const listSize = $('#board > li').length;
+    const winWidth = $(window).width();
+    // もう1つリストを追加分は隠す
+    const listSize = $('#board > li').length -1;
     // 両側のpaddingを引く
     const listWidth = Math.floor((winWidth / listSize) - 6 * 2);
     $('#board > li').each(function(){
